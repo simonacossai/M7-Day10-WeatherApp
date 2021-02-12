@@ -52,8 +52,8 @@ export default function Home() {
         <Container fluid>
             <Row>
                 <SideBar fetchData={fetchData} data={data} />
-                <Col md={9} style={{ height: "100vh", backgroundColor: "#ffff" }}>
-                    <Container className="justify-content-center align-items-center text-center">
+                <Col md={9} style={{ height: "100vh", backgroundColor: "#ffff" }} className="px-3">
+                    <Container className="justify-content-center align-items-center text-center px-5">
                        {days && <h2 className="text-left pt-5 pb-2">About tomorrow</h2>}
                         <Row className="d-flex justify-content-center align-items-center text-center ">
                             {days && days.list.splice(0, 4).map((e) => {
