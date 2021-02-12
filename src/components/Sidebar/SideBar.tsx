@@ -32,7 +32,7 @@ export default function SideBar({ fetchData, data }: Props) {
                     <div className="d-flex text-center align-items-center">
                         <img src={`http://openweathermap.org/img/wn/${data && data.weather[0].icon}.png`} className="weather-icon my-4" />
                     </div>
-                    <h1 className="mt-3 temp">{data.main.temp} F°</h1>
+                    <h1 className="mt-3 temp">{data.main.temp} C°</h1>
                     <h4>{data.name}, {data.sys.country}</h4>
                     <div className="text-left my-5">
                         <p className="p-0 m-0"><img src={`http://openweathermap.org/img/wn/${data && data.weather[0].icon}.png`} />{data.weather[0].main}</p>
