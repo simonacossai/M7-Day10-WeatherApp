@@ -16,7 +16,7 @@ export default function Home() {
     const fetchData = async (city: string) => {
         try {
             const response = await fetch(
-                `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=9a32190878843e4880bb3c541fbe9127`,
+                `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=9a32190878843e4880bb3c541fbe9127`,
                 {
                     method: "GET",
                 }
@@ -34,7 +34,7 @@ export default function Home() {
     const fetchOtherDays = async (city: string) => {
         try {
             const response = await fetch(
-                `http://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=9a32190878843e4880bb3c541fbe9127`,
+                `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=9a32190878843e4880bb3c541fbe9127`,
                 {
                     method: "GET",
                 }
