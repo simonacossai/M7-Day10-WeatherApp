@@ -58,8 +58,8 @@ export default function Home() {
                         <Row className="d-flex justify-content-center align-items-center text-center ">
                             {days && days.list.splice(0, 4).map((e) => {
                                 return (
-                                    <Col md={3} sm={12}>
-                                        <Card style={{ width: '14rem' }} className="py-1 card-next-days">
+                                    <Col md={3} sm={12} className="d-flex text-center justify-content-center">
+                                        <Card style={{ width: '14rem' }} className="py-1 card-next-days mt-2">
                                             <Card.Body>
                                                 <Card.Title>{moment(e.dt_txt, "YYYY-MM-DD HH:mm:ss").format('dddd')}</Card.Title>
                                                 <Card.Subtitle>{moment(e.dt_txt, "YYYY-MM-DD HH:mm:ss").format("hh:mm")}</Card.Subtitle>
@@ -80,9 +80,9 @@ export default function Home() {
                         (
                             <>
                     <h2 className="text-left pt-5 pb-2">Today's highlights</h2>
-                        <Row>
-                            <Col md={4} sm={12}>
-                                <Card style={{ width: '18rem' }} className="card-next-days">
+                        <Row  className="d-flex text-center justify-content-center">
+                            <Col md={4} sm={12} >
+                                <Card style={{ width: '18rem' }} className="card-next-days mt-2">
                                     <Card.Body>
                                         <Card.Title></Card.Title>
                                         <Card.Subtitle className="mb-2 text-muted "><img src="https://img.icons8.com/plasticine/2x/wind.png" style={{width:"100px"}}/></Card.Subtitle>
@@ -99,7 +99,7 @@ export default function Home() {
                                 </Card>
                             </Col>
                             <Col md={4} sm={12}>
-                                <Card style={{ width: '18rem' }} className="card-next-days">
+                                <Card style={{ width: '18rem' }} className="card-next-days mt-2">
                                     <Card.Body>
                                         <Card.Title></Card.Title>
                                         <Card.Subtitle className="mb-2 text-muted "><img src="https://img.icons8.com/plasticine/2x/temperature-sensitive.png" style={{width:"100px"}} /></Card.Subtitle>
@@ -116,7 +116,7 @@ export default function Home() {
                                 </Card>
                             </Col>
                             <Col md={4} sm={12}>
-                                <Card style={{ width: '18rem' }} className="card-next-days">
+                                <Card style={{ width: '18rem' }} className="card-next-days mt-2">
                                     <Card.Body>
                                         <Card.Title></Card.Title>
                                         <Card.Subtitle className="mb-2 text-muted "><img src="https://icons.iconarchive.com/icons/custom-icon-design/lovely-weather-2/512/Humidity-icon.png" style={{width:"100px"}} /></Card.Subtitle>
