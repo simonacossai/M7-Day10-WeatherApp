@@ -24,8 +24,7 @@ export default function SideBar({ fetchData, data }: Props) {
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
                     id="searchquery"
-                    className="search-input"
-                />
+                    className="search-input" />
             </InputGroup>
             {data &&
                 <div className="text-left">
@@ -41,7 +40,7 @@ export default function SideBar({ fetchData, data }: Props) {
                 </div>
 
             }
-          
+
         </Col>
     )
 }
